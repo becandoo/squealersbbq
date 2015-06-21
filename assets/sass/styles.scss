@@ -1,0 +1,37 @@
+@import "compass";
+
+@font-face{
+    font-family: "Copperplate Gothic Bold Regular";
+    src: url('../fonts/Copperplate Gothic Bold Regular.ttf'),
+    url('../fonts/Copperplate Gothic Bold Regular.ttf'); /* IE */
+}
+
+body {
+background: url(https://dl.dropbox.com/s/5f38z4bsqv6clxy/retina_wood.png?dl=0);
+}
+
+  .button{
+   background: tint(rgb(135, 0, 0), 15%) !important;
+    border: none !important;
+    &:hover, &:active, &:focus {
+      background: darken(rgb(135, 0, 0), 5%) !important;
+      }
+  }
+
+.slide-image {
+	height: 500px !important;
+}
+
+.slider-nav-2 {
+  height: 350px;
+  margin-bottom: 25px;
+  
+  img {
+      height: 300px !important;
+  }
+}
+
+.labels {
+  font-family: "Copperplate Gothic Bold Regular", sans-serif;
+  text-align: center;
+}

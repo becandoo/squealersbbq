@@ -20,10 +20,9 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     
     <!--jQuery-->   
-    <script src="assets/js/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
+
     
-    <script src="assets/js/jquery-2.1.js"></script>
+    <script src="assets/js/jquery-2.1.4.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     
   </head>
@@ -55,41 +54,59 @@
          </div>
        </div>
      </div>
-       
+
+<br>
      
       <div class="row">
         <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[img]">
+          <img src="assets/images/1149070_10200453814049974_1261309652_n.jpg">
         </div>
-        <div class="large-8 columns">
-          <h4>This is a content section.</h4>
-          <div class="row">
-            <div class="large-6 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-            </div>
-            <div class="large-6 columns">
-              <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
+
+            <div class="large-8 columns">
+              <p>Squealer's Hickory Smoked Bar-B-Que has been Meridian's favorite BBQ since we opened our doors back in 1998.  
+                We love our hometown and we try our best to make our customers happy and keep them coming back again and again!</p>
+              <p>We hope you will stop in and try some of our most popular items, like our juicy pulled pork, tender smoked ribs, or our homemade bannana pudding.
+                 One visit and we are certain you will be back for more.</p>
             </div>
           </div>
         </div>
       </div>
-     
-     
+     <br>
+     <br>
        
+     <div class="row">
+        <div class="large-12 columns">       
+          <div class="slider-nav-2">
+            <img class="slide-image" src="assets/images/887501_4650811388651_45551586_o.jpg">
+        
+            <img class="slide-image" src="assets/images/1185138_10154741130175615_8913119881836078007_n.jpg">
+        
+            <img class="slide-image" src="assets/images/1936208_1111981563706_2079849_n.jpg">
+      
+         </div>
+       </div>
+       <div class="large-12 columns">
+              <div class="large-4 columns">
+         <h3 class="labels">Amazing Bar-B-Que</h3>
+         </div>
+         <div class="large-4 columns">
+         <h3 class="labels">Live Music!</h3>
+         </div>
+         <div class="large-4 columns">
+         <h3 class="labels">Full Bar!</h3>
+         </div>
+
+         
+     </div>
      
       <div class="row">
-        <div class="large-8 columns">
-          <h4>This is a content section.</h4>
+        <div class="large-12 columns">
+    
+          <p>
+          </p>
      
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+          <p></p>
      
-          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-     
-        </div>
-        <div class="large-4 columns slick">
-          <img src="http://placehold.it/400x300&text=[img]">
-          <img src="http://placehold.it/400x300&text=[img]">
-          <img src="http://placehold.it/400x300&text=[img]">
         </div>
       </div>    
        
@@ -104,10 +121,11 @@
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -120,7 +138,7 @@
 <script src="assets/vendor/foundation/js/app.js"></script>
 
 <!--slick-->
-<script src="assets/js/slick/slick.min.js"></script>     
+<script src="assets/js/slick/slick.js"></script>     
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -131,7 +149,16 @@
       slidesToShow: 1,
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 6000
+      autoplaySpeed: 4000
+    });
+        $('.slider-nav-2').slick({
+      dots: true,
+      infinite: true,
+      speed: 400,
+      slidesToShow: 3,
+      adaptiveHeight: false,
+      autoplay: true,
+      autoplaySpeed: 4000
     });
 });
 </script>

@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Copperplate Gothic Bold Regular";
+  src: url("../fonts/Copperplate Gothic Bold Regular.ttf"), url("../fonts/Copperplate Gothic Bold Regular.ttf");
+  /* IE */
+}
+/* line 9, ../sass/styles.scss */
+body {
+  background: url(https://dl.dropbox.com/s/5f38z4bsqv6clxy/retina_wood.png?dl=0);
+}
+
+/* line 13, ../sass/styles.scss */
+.button {
+  background: #992626 !important;
+  border: none !important;
+}
+/* line 16, ../sass/styles.scss */
+.button:hover, .button:active, .button:focus {
+  background: #6e0000 !important;
+}
+
+/* line 21, ../sass/styles.scss */
+.slide-image {
+  height: 500px !important;
+}
+
+/* line 25, ../sass/styles.scss */
+.slider-nav-2 {
+  height: 350px;
+  margin-bottom: 25px;
+}
+/* line 29, ../sass/styles.scss */
+.slider-nav-2 img {
+  height: 300px !important;
+}
+
+/* line 34, ../sass/styles.scss */
+.labels {
+  font-family: "Copperplate Gothic Bold Regular", sans-serif;
+  text-align: center;
+}
