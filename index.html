@@ -13,36 +13,42 @@
     <link rel="stylesheet" href="assets/vendor/foundation/stylesheets/app.css" />
     <link rel="stylesheet" href="assets/js/slick/slick.css" />
     <link rel="stylesheet" href="assets/js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/js/responsive-nav.js-master/responsive-nav.css">
+    <link rel="stylesheet" href="assets/js/responsive-nav.js-master/demos/advanced/styles.css">
     
     <!------------------------------------------------------scripts------------------------------------------------------->
         
     <!--modernizr-->
     <script src="bower_components/modernizr/modernizr.js"></script>
     
-    <!--jQuery-->   
-
-    
+    <!--jQuery-->       
     <script src="assets/js/jquery-2.1.4.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     
+    <!--responsive nav-->
+    <script src="assets/js/responsive-nav.js-master/responsive-nav.js"></script>
+    
   </head>
   
-    <body>      
-        <div class="row">
-          <div class="large-4 columns">
-            <h1><img src="http://squealershickorysmokedbbq.com/img/Logo2.png"></h1>
-          </div>
-        
-        <div class="large-8 columns">
-          <ul class="button-group right">
-            <li><a href="index.html" class="button">Home</a></li>
-            <li><a href="menu.html" class="button">Menu</a></li>
-            <li><a href="events.html" class="button">Events</a></li>
-            <li><a href="about.html" class="button">About</a></li>
-            <li><a href="contact.html" class="button">Contact</a></li>
+    <body>   
+      
+
+               <nav class="nav-collapse fixed">          
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </div>
+
+          </nav>
+
+<br>
+        <div class="row">
+          <div class="small-12 columns">
+            <h1><img src="http://squealershickorysmokedbbq.com/img/Logo2.png"></h1>          
           
       <div class="row">
         <div class="large-12 columns">       
@@ -56,7 +62,21 @@
      </div>
 
 <br>
-     
+<div class="row">
+            <div class="large-12 columns">
+              <div class="large-4 columns">
+         <h3 class="labels">Amazing Bar-B-Que</h3>
+         </div>
+         <div class="large-4 columns">
+         <h3 class="labels">Live Music!</h3>
+         </div>
+         <div class="large-4 columns">
+         <h3 class="labels">Full Bar!</h3>
+         </div>
+
+         </div> 
+     </div>
+     <br>
       <div class="row">
         <div class="large-4 columns">
           <img src="assets/images/1149070_10200453814049974_1261309652_n.jpg">
@@ -76,28 +96,19 @@
        
      <div class="row">
         <div class="large-12 columns">       
-          <div class="slider-nav-2">
-            <img class="slide-image" src="assets/images/887501_4650811388651_45551586_o.jpg">
-        
-            <img class="slide-image" src="assets/images/1185138_10154741130175615_8913119881836078007_n.jpg">
-        
-            <img class="slide-image" src="assets/images/1936208_1111981563706_2079849_n.jpg">
-      
+       <div class="small-12 medium-4 columns">
+            <img class="thumb-images" src="assets/images/887501_4650811388651_45551586_o.jpg">
+               </div>
+        <div class="small-12 medium-4 columns">
+            <img class="thumb-images" src="assets/images/1185138_10154741130175615_8913119881836078007_n.jpg">
+               </div>
+        <div class="small-12 medium-4 columns">
+  
+            <img class="thumb-images" src="assets/images/1936208_1111981563706_2079849_n.jpg">
          </div>
+        </div>
        </div>
-       <div class="large-12 columns">
-              <div class="large-4 columns">
-         <h3 class="labels">Amazing Bar-B-Que</h3>
-         </div>
-         <div class="large-4 columns">
-         <h3 class="labels">Live Music!</h3>
-         </div>
-         <div class="large-4 columns">
-         <h3 class="labels">Full Bar!</h3>
-         </div>
 
-         
-     </div>
      
       <div class="row">
         <div class="large-12 columns">
@@ -162,6 +173,23 @@
     });
 });
 </script>
+    <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+    </script>
 </body>
 </html>
     
