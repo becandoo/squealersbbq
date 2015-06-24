@@ -51,7 +51,7 @@ img {max-width: 100%;}
 	 left:0px;
 	 right:0px;
 	 bottom:0;
-
+	 background: #6e0000;
 }
 
 .navArea {
@@ -60,6 +60,7 @@ img {max-width: 100%;}
 .navwrapper .container {
 	padding:0;
 	width:auto;
+	 background: #6e0000;
 }
 .navbar-header {
 	display:none;
@@ -97,7 +98,7 @@ img {max-width: 100%;}
 }
 .navbar.navbar-inverse.navbar-static-top {
 	margin:0px auto;
-	background:none;
+	 background: #6e0000;
 	color:#c3c8d6;
 	border:none;
 	font-family:'Open Sans',sans-serif;
@@ -130,7 +131,7 @@ img {max-width: 100%;}
 	color:#fff;
 }
 .isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
-	background:#6e0000;
+	background:#6e0000 !important;
 	color:#fff;
 }
 .isFixed .navbar.navbar-inverse.navbar-static-top a {
@@ -145,7 +146,7 @@ img {max-width: 100%;}
 		background: #6e0000 !important;
 }
 .isFixed {
-	background:#333;
+	 background: #6e0000;
 		-o-transition:all .5s;
 	-ms-transition:all .5s;
 	-moz-transition:all .5s;
@@ -156,8 +157,8 @@ img {max-width: 100%;}
 	display: block !important;
 }
 @media (max-width: 655px) {
-	.collapse {background: #333;}
-	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
+
+	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;}
 }
 /*---------------------------------------------------- 	Intro------------------------------------------------------*/
 header {
@@ -217,11 +218,22 @@ img#site-title {
 
 }
 
+#contact-header {
+	font-family: "Copperplate Gothic Bold Regular", sans-serif !important;
+}
+
+.contact h2 {
+	font-family: "Copperplate Gothic Bold Regular", sans-serif !important;
+}
 .contact-info span{
 	margin: 10px;
 	font-size: 22px;
 	color: #333;
 	float: right;
+}
+
+.contact-info h2{
+  font-family: "Copperplate Gothic Bold Regular", sans-serif;
 }
 
 /*---------------------------------------------------- 	Team------------------------------------------------------*/
@@ -570,9 +582,6 @@ span.nav-close:before {
 	}
 	.info-keys {
 			display:none;
-	}
-.grid-gallery figure img {
-	height: 200px !important;
 	}
 }
 

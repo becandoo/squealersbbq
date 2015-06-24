@@ -18,10 +18,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/bootstrap.css">
 <link rel="stylesheet" href="assets/stylesheets/font-awesome.css">
 <link rel="stylesheet" href="assets/stylesheets/animate.css">
-<link rel="stylesheet" href="assets/stylesheets/theme.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -54,20 +54,26 @@
 	</div>
 	</div>
 	</section>
+	
+	
 			<!--header-->
 	<header>
-	<div class="menu">
-		<div class="navbar-wrapper">
+		<nav class="navbar navbar-default">
+	<div class="menu" role="navigation">
+		<div class="navbar-wrapper" role="navigation">
+			   <div class="navbar-header">
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 			<div class="container">
+				
 				<div class="navwrapper">
-					<div class="navbar navbar-inverse navbar-static-top">
+					<div class="navbar navbar-inverse navbar-static-top" role="navigation">
 						<div class="container">
 							<div class="navArea">
-								<div class="navbar-collapse collapse">
+								<div class="navbar-collapse collapse" role="navigation">
 									<ul class="nav navbar-nav">
-										<li class="menuItem active"><a href="#wrapper">Home</a></li>
-										<li class="menuItem"><a href="#aboutus">About Us</a></li>
-										<li class="menuItem"><a href="#specialties">Menu</a></li>
+										<li class="menuItem active"><a href="index.html">Home</a></li>										
+										<li class="menuItem"><a href="menu.html">Menu</a></li>
 										<li class="menuItem"><a href="#gallery">Events</a></li>
 										<li class="menuItem"><a href="#feedback">Caterings</a></li>
 										<li class="menuItem"><a href="#contact">Fundraisers</a></li>
@@ -80,14 +86,14 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+		</nav>
 	</header>
 
 
-	
 				<div class="row">
-			<div class="col-md-12">
-				<div class="papers text-center menu">
+			<div class="col-md-12 text-center">
+				
 		
 					<h1 class="menu-header-main">Menu</h1>
 					
@@ -267,16 +273,18 @@ sandwhich is overflowing with flavor and crispy goodnessssssss! A sandwhich you 
 <p><strong>We also have a full bar, serving your favorite Bottle Beer, Craft &amp; Draft Bears, as well as your favorite Wine and Spirits!</strong></p>
 
 				</div>
-			</div>
+		
 			</div>
   
 	<!--footer-->
 	<section class="footer" id="footer">
-
+	<p class="text-center">
+		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+	</p>
 	<div class="container">
 		<ul>
-			<li><a href="#">Home</i></a></li>
-			<li><a href="#">Menu</i></a></li>
+			<li><a href="index.html">Home</i></a></li>
+			<li><a href="menu.html">Menu</i></a></li>
 			<li><a href="#">Catering</i></a></li>
 			<li><a href="#">Fundraisers</i></a></li>
 			<li><a href="#">Events</a></li>
@@ -291,7 +299,6 @@ sandwhich is overflowing with flavor and crispy goodnessssssss! A sandwhich you 
 	</section>
 		</div>
 </div><!--wrapper end-->
-
 
 <!--Javascripts-->
 <script src="assets/js/jquery.js"></script>
